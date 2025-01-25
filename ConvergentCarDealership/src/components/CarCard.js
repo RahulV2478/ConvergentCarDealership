@@ -38,7 +38,7 @@ const CarCard = ({ car }) => {
       </Link>
       <div className="px-6 py-4">
         {/* Car Title */}
-        <div className="font-bold text-purple-500 text-xl mb-2">
+        <div className="font-bold text-blue-900 text-xl mb-2">
           {year} {make} {model}
         </div>
         {/* Car Details */}

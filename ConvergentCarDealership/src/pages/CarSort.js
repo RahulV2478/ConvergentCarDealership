@@ -72,7 +72,7 @@ const CarSort = () => {
 
   return (
     <div className="my-10 px-4">
-      <h1 className="text-3xl font-bold mb-6 text-center">Sorted Cars</h1>
+      <h2 className="text-3xl font-bold mb-6 text-center">Search</h2>
 
       {/* Sort Controls */}
       <div className="flex justify-center mb-6 space-x-4">

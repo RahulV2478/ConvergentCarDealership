@@ -1,25 +1,24 @@
 // src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
+import AuthPage from './pages/AuthPage';
 import CarSort from './pages/CarSort';
 import CarDetail from './pages/CarDetail';
-import AddCar from './pages/AddCar'; // Optional: If you have an AddCar page
-import Navbar from './components/Navbar'; // Optional: If you have a Navbar
+import AddCar from './pages/AddCar';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <Router>
       <div>
-        {/* Reintroduce Navbar */}
         <Navbar />
-
-        {/* Define Routes */}
         <Switch>
-          <Route exact path="/" component={CarSort} />
+          {/* Landing on Auth Page by default */}
+          <Route exact path="/" component={AuthPage} />
+          {/* Redirect to CarSort after login */}
+          <Route path="/home" component={CarSort} />
           <Route path="/car/:id" component={CarDetail} />
-          <Route path="/add-car" component={AddCar} /> {/* Optional Route */}
-          {/* Add more routes as needed */}
+          <Route path="/add-car" component={AddCar} />
         </Switch>
       </div>
     </Router>
