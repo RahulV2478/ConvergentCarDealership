@@ -1,4 +1,4 @@
-# ConvergentCarDealership
+# Convergent Car Dealership
 ## Car Dealership App
 A simple React + Firebase application for browsing and sorting a list of cars, viewing detailed information, and authenticating users.
 
